@@ -203,9 +203,33 @@ body {
 .bxs-heart {
   display: none;
 }
+.favorites {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 9999;
+}
+
+.favplus {
+  display: none;
+}
 .open {
-    display: block;
-  }
+  display: block;
+}
+.close {
+  display: none;
+}
+
 /* Адаптивные стили */
 @media (max-width: 768px) {
   .gallery-grid {

@@ -44,3 +44,15 @@ like.addEventListener("click", (e) => {
     noLike.classList.remove("close");
   }
 });
+const fav = document.querySelector(".favorites");
+const favplus = document.querySelector(".favplus");
+const favminus = document.querySelector(".favminus");
+fav.addEventListener("click", (e) => {
+  if (e.target.classList.contains("favminus")) {
+    favplus.classList.add("open");
+    favminus.classList.add("close");
+  } else {
+    favplus.classList.remove("open");
+    favminus.classList.remove("close");
+  }
+});
