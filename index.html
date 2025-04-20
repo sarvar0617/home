@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея изображений</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <script src="./modal.js" defer></script>
+  </head>
+  <body>
+    <!-- Шапка с поиском -->
+    <header class="header">
+      <div class="container">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Поиск изображений..."
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Галерея карточек -->
+    <main class="gallery-container">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- cardlar joyi -->
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-container" id="modalContainer">
+      <div class="modal-close" id="modalClose"></div>
+    </div>
+  </body>
 </html>
