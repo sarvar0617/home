@@ -102,8 +102,11 @@ body {
   align-items: center;
   padding: 20px;
 }
-.open{
-    display: block;
+.open {
+  display: block;
+}
+.close {
+  display: none;
 }
 .modal {
   background-color: white;
@@ -176,7 +179,33 @@ body {
 .modal-close::after {
   transform: rotate(-45deg);
 }
+.like {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 9999;
+}
+.bx {
+  color: red;
+  font-size: 32px;
+}
 
+.bxs-heart {
+  display: none;
+}
+.open {
+    display: block;
+  }
 /* Адаптивные стили */
 @media (max-width: 768px) {
   .gallery-grid {

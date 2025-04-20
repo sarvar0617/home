@@ -18,7 +18,7 @@ async function openModal(id) {
   const div = document.createElement("div");
   div.setAttribute("class", "modal");
   div.innerHTML = `
-   <img
+  <img
           src="${res.urls.full}"
           class="modal-image"
           id="modalImage"
@@ -32,3 +32,15 @@ async function openModal(id) {
     div.remove();
   });
 }
+const like = document.querySelector(".like");
+const noLike = document.querySelector(".bx-heart");
+const yesLike = document.querySelector(".bxs-heart");
+like.addEventListener("click", (e) => {
+  if (e.target.classList.contains("bx-heart")) {
+    yesLike.classList.add("open");
+    noLike.classList.add("close");
+  } else {
+    yesLike.classList.remove("open");
+    noLike.classList.remove("close");
+  }
+});
