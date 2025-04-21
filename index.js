@@ -14,6 +14,7 @@ function getCards(cards) {
   gallery.innerHTML = "";
   cards.forEach((card) => {
     displayCard(card, card.id);
+    console.log(card);
   });
 }
 function displayCard(data, id) {
